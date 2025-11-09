@@ -1,0 +1,24 @@
+<div class="card h-100" (click)="abrirDetalle(personaje)" style="cursor: pointer;">
+  <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name" />
+
+  <div class="card-body">
+    <h5 class="card-title">{{ personaje.name }}</h5>
+    <p class="card-text">
+      <strong>Status:</strong> 
+      @switch(personaje.status) {
+       @case('Alive') {
+            <span class="badge bg-success">Vivo</span>
+            }
+        @case('Dead') {
+            <span class="badge bg-danger">Muerto</span>
+            }
+        @default {
+            <span class="badge bg-secondary">Desconocido</span>
+            }
+      }
+      <br />
+      <strong>Species:</strong> {{ personaje.species }}<br />
+      <strong>Gender:</strong> {{ personaje.gender }}
+    </p>
+  </div>
+</div>

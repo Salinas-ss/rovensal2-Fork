@@ -13,6 +13,7 @@ import { PalomaresComponent } from './entregas/palomares/component/palomaresComp
 import { PavonComponent } from './entregas/pavon/component/pavonComponent/pavonComponent';
 import { ReynaComponent } from './entregas/reyna/component/reynaComponent/reynaComponent';
 import { SalinasComponent } from './entregas/salinas/component/salinasComponent/salinasComponent';
+import { salinasListCharacter } from './entregas/salinas/component/salinasListCharacter/salinasListCharacter';
 import { SemperteguiComponent } from './entregas/sempertegui/component/semperteguiComponent/semperteguiComponent';
 import { SilvestreComponent } from './entregas/silvestre/component/silvestreComponent/silvestreComponent';
 import { SoaresComponent } from './entregas/soares/component/soaresComponent/soaresComponent';
@@ -35,6 +36,7 @@ export const routes: Routes = [
     { path: 'pavon', component: PavonComponent },
     { path: 'reyna', component: ReynaComponent },
     { path: 'salinas', component: SalinasComponent },
+    { path: 'salinas/listaPersonajes', component:salinasListCharacter},
     { path: 'sempertegui', component: SemperteguiComponent },
     { path: 'silvestre', component: SilvestreComponent },
     { path: 'soares', component: SoaresComponent },
