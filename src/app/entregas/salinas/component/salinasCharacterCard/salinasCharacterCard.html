@@ -1,4 +1,4 @@
-<div class="card h-100" (click)="abrirDetalle(personaje)" style="cursor: pointer;">
+<div class="card h-100" >
   <img [src]="personaje.image" class="card-img-top" [alt]="personaje.name" />
 
   <div class="card-body">
@@ -16,9 +16,9 @@
             <span class="badge bg-secondary">Desconocido</span>
             }
       }
-      <br />
-      <strong>Species:</strong> {{ personaje.species }}<br />
-      <strong>Gender:</strong> {{ personaje.gender }}
+      <br /><strong>Species:</strong> {{ personaje.species }}<br />
+      <br /> <strong>Gender:</strong> {{ personaje.gender }}<br />
+      <button (click)="VerPersonajes(personaje)">Ver información</button>
     </p>
   </div>
 </div>

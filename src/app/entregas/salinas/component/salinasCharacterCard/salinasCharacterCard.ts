@@ -15,7 +15,8 @@ export class SalinasCharacterCardComponent {
   constructor(private dialog: MatDialog) {}
     
   
-  abrirDetalle(personaje: RmPersonaje) {
+  VerPersonajes(personaje: RmPersonaje) {
+     console.log("Este es la información del personaje: ", personaje);
     this.dialog.open(SalinasDetailMatDialog, {
       width: '400px',
       data: { id: personaje.id }

@@ -2,11 +2,13 @@ import { Component } from "@angular/core";
 import { SalinasCharacterCardComponent } from "../salinasCharacterCard/salinasCharacterCard";
 import { RmPersonaje } from "../../model/salinasInterface";
 import { SalinasService } from "../../service/salinasService";
+import { SalinasNavbarUnroutedComponent } from "../salinasNavbarUnrouted/salinasNavbarUnrouted";
+
 
 
 @Component ({
     selector: 'app-salinasListCharacter',
-    imports: [SalinasCharacterCardComponent],
+    imports: [SalinasCharacterCardComponent, SalinasNavbarUnroutedComponent],
     templateUrl: './salinasListCharacter.html',
     styleUrl: './salinasListCharacter.css',
 })
